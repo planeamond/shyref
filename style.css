@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+  font-family: monospace;
+  
+  overflow: auto;
+}
+
+svg {
+  display: block; /* 하단 불필요한 공백 방지 */
+  min-width: 100%; /* 화면보다 작을 때는 꽉 차게, 클 때는 자기 크기 유지 */
+}
+
+/* 노드 박스 */
+.node {
+  stroke: black;
+  stroke-width: 1;
+}
+
+/* 텍스트 (왼쪽 정렬) */
+.text {
+  font-size: 13px;
+  text-anchor: start;            /* ⭐ 왼쪽 정렬 */
+  dominant-baseline: hanging;
+  pointer-events: none;
+}
+
+/* 연결선 */
+.line {
+  stroke: black;
+  stroke-width: 1;
+}
